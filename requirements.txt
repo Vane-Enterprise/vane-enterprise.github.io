@@ -1,0 +1,5 @@
+pytest==7.4.3
+pytest-cov==4.1.0
+google-api-python-client==1.12.8
+google-auth-httplib2==0.2.0
+google-auth-oauthlib==1.2.0
