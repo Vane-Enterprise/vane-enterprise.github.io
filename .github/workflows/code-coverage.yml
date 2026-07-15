@@ -28,9 +28,10 @@ jobs:
         python-version: '3.11'
         cache: 'pip'
 
-    # Install your dependencies and testing packages
+        # Install your dependencies and testing packages
     - name: Install dependencies
       run: |
+        pip install pytest pytest-cov
 
     # Run Python tests and generate a coverage report
     - name: Run Python tests with coverage
