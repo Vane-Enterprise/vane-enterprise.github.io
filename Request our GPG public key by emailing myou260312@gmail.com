@@ -1,5 +1,3 @@
----
-
 ## Security Best Practices for Using This App
 
 ### For Repository Administrators
