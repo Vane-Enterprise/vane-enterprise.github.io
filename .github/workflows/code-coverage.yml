@@ -28,7 +28,7 @@ jobs:
         python-version: '3.11'
         cache: 'pip'
 
-        # Install your dependencies and testing packages
+            # Install your dependencies and testing packages
     - name: Install dependencies
       run: |
         pip install pytest pytest-cov
