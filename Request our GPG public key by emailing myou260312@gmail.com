@@ -24,8 +24,6 @@
    - If you notice suspicious behavior, report it to your repository administrator
    - Contact our security team if you believe the app is malfunctioning
 
----
-
 ## Dependency Security
 
 This repository has minimal external dependencies:
@@ -37,8 +35,6 @@ This repository has minimal external dependencies:
 ### Dependency Updates
 
 As no third-party dependencies are present in this repository, dependency security patches are not applicable. However, we maintain awareness of GitHub Pages platform security updates.
-
----
 
 ## Infrastructure Security
 
@@ -56,15 +52,11 @@ As no third-party dependencies are present in this repository, dependency securi
 - ✅ Public audit log for all commits
 - ✅ CODEOWNERS file for access control
 
----
-
 ## Known Security Limitations
 
 1. **No Client-Side Authentication:** This is a public marketing page; no user authentication is implemented.
 2. **No User Data Collection:** The landing page does not collect personal data (consistent with privacy policy).
 3. **Static Content:** Only HTML/CSS present; no backend processing on this page.
-
----
 
 ## Compliance Frameworks
 
@@ -75,8 +67,6 @@ This repository is designed to support compliance with:
 - ✅ **SOC 2 Type II:** Security controls documented
 - ✅ **ISO 27001:** Information security practices aligned
 
----
-
 ## Vulnerability Disclosure Timeline (CVE Process)
 
 If your vulnerability is eligible for a CVE identifier:
@@ -85,8 +75,6 @@ If your vulnerability is eligible for a CVE identifier:
 2. Public disclosure will include CVE details
 3. Patch release will be tagged with severity level
 4. Security advisory will be posted in repository
-
----
 
 ## Contacts
 
@@ -98,15 +86,12 @@ If your vulnerability is eligible for a CVE identifier:
 | **General Support** | harigov63@gmail.com | 24-48 hours |
 | **Domain Contact** | mdah@taruglobalaccess.com | 24-48 hours |
 
----
-
 ## Past Security Audits
 
 | Date | Auditor | Result | Details |
 |------|---------|--------|----------|
 | July 15, 2026 | Internal | PASS | Security review for landing page deployment with all fixes applied |
 
----
 
 **Version:** 1.0  
 **Effective Date:** July 15, 2026  
