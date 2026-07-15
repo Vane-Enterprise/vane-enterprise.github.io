@@ -1,0 +1,23 @@
+# Vane Enterprise Repository Code Ownership
+# This file defines who reviews and approves changes to specific areas
+
+# Default owners for all files
+* @myou260312-eng
+
+# Landing page and marketing content
+VANE-ENTERPRISE-LLC @myou260312-eng
+index.html @myou260312-eng
+*.md @myou260312-eng
+
+# Privacy and security-critical files
+PRIVACY.md @myou260312-eng
+SECURITY.md @myou260312-eng
+.github/workflows/security* @myou260312-eng
+
+# GitHub configuration
+.github/ @myou260312-eng
+.gitignore @myou260312-eng
+
+# Documentation
+README.md @myou260312-eng
+DOCS/ @myou260312-eng
