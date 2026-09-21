@@ -1,0 +1,70 @@
+Comprehensive code quality validation
+Implement multi-language code quality enforcement that adapts to your technology stack:
+
+```Bash
+#!/usr/bin/env bash
+# Enterprise code quality validation framework
+
+validate_code_quality() {
+    local staged_files=$(git diff --cached --name-only --diff-filter=ACM)
+    local quality_violations=0
+
+    echo "Performing code quality validation..."
+
+    for file in $staged_files; do
+        case "$file" in
+            *.js|*.jsx|*.ts|*.tsx)
+                if command -v npx >/dev/null 2>&1; then
+                    echo "Linting JavaScript/TypeScript: $file"
+                    npx eslint "$file" || ((quality_violations++))
+
+                    if [[ "$file" =~ \.(ts|tsx)$ ]]; then
+                        echo "Type checking: $file"
+                        npx tsc --noEmit --skipLibCheck "$file" || ((quality_violations++))
+                    fi
+                fi
+                ;;
+            *.py)
+                if command -v python3 >/dev/null 2>&1; then
+                    echo "Linting Python: $file"
+                    python3 -m flake8 "$file" || ((quality_violations++))
+
+                    if command -v mypy >/dev/null 2>&1; then
+                        echo "Type checking Python: $file"
+                        python3 -m mypy "$file" || ((quality_violations++))
+                    fi
+                fi
+                ;;
+            *.cs)
+                if command -v dotnet >/dev/null 2>&1; then
+                    echo "Formatting C#: $file"
+                    dotnet format --verify-no-changes --include "$file" || ((quality_violations++))
+                fi
+                ;;
+            *.go)
+                if command -v go >/dev/null 2>&1; then
+                    echo "Formatting Go: $file"
+                    if ! gofmt -l "$file" | grep -q .; then
+                        gofmt -w "$file"
+                        git add "$file"
+                    fi
+
+                    echo "Linting Go: $file"
+                    golint "$file" || ((quality_violations++))
+                fi
+                ;;
+        esac
+    done
+
+    if [ $quality_violations -gt 0 ]; then
+        echo "Code quality validation failed with $quality_violations violations"
+        echo "Please fix the issues above before committing"
+        return 1
+    fi
+
+    echo "Code quality validation passed"
+    return 0
+}
+
+# Execute quality validation
+validate_code_quality || exit 1
