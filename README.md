@@ -1,8 +1,8 @@
-# vane-enterprise.github.io
+# [Vane Enterprise  LLC](vane-enterprise.github.io)
 
-Official public verification and technical support portal for the "Vane-Guard Sovereign Orchestrator" application. Built under the [Vane Enterprise LLC](https://vane-enterprise.github.io) identity anchor framework, this landing infrastructure validates multi-gate deterministic Truth-AI system architectures and RAG pipelines to eliminate model hallucinations.
+### Official public verification and technical support portal for the "Vane-Guard Sovereign Orchestrator" application. Built under the [Vane Enterprise LLC](https://vane-enterprise.github.io) identity anchor framework, this landing infrastructure validates multi-gate deterministic Truth-AI system architectures and RAG pipelines to eliminate model hallucinations.
 
-VANE-ENTERPRISE-LLC-BACKUP-PACKAGE_v1.0
+### VANE-ENTERPRISE-LLC-BACKUP-PACKAGE_v1.0
 Generated: July 15, 2026
 Status: Production-Ready
 Verification: All contact information verified and accurate
@@ -13,8 +13,8 @@ Verification: All contact information verified and accurate
 
 **Effective Date:** January 1, 2026  
 **Last Updated:** July 15, 2026  
-**Organization:** Vane Enterprise LLC / Vane-Guard Sovereign Systems  
-**Contact:** hamdgai@cc.cc (via myou260312@gmail.com)
+**Organization:** [Vane Enterprise LLC](vane-enterprise.github.io)/ [Vane-Guard Sovereign Systems](dvane.gumroad.com/l/Vane-Guar) 
+**Contact:** [admin](mailto:hamdgai@cc.cc) [Lead Architect](myou260312@gmail.com)
 
 [FULL 13-SECTION GDPR/CCPA/SOC2 COMPLIANT DOCUMENT]
 - Data Subject Rights (GDPR Articles 15-22)
@@ -27,7 +27,7 @@ Verification: All contact information verified and accurate
 # Security Policy
 
 **Last Updated:** July 15, 2026  
-**Contact:** myou260312@gmail.com
+**Contact:** [Lead Architect](myou260312@gmail.com)
 
 [FULL VULNERABILITY DISCLOSURE POLICY]
 - 48-hour initial response SLA
@@ -38,8 +38,8 @@ Verification: All contact information verified and accurate
 # FILE 3: .github/CODEOWNERS
 
 # Vane Enterprise Repository Code Ownership
-* @myou260312-eng
-* @AnticipatedD
+* [MD  ABUL  HOSSAIN](@myou260312-eng) &
+* [AnticipatedD](@AnticipatedD)
   
 # FILE 4-7: GitHub Actions Workflows
 
