@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support Vane Enterprise | Funding & Sponsorship</title>
+    <title>Support Vane Enterprise | Sponsorship & Funding</title>
     <style>
         :root {
             --bg: #0d1117;
@@ -26,161 +26,215 @@
         }
         a { color: var(--accent); text-decoration: none; }
         .container {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 2rem 1rem 4rem;
         }
         header {
             border-bottom: 1px solid var(--border);
-            background: linear-gradient(180deg, #161b22 0%, #0d1117 100%);
-            padding: 2.5rem 1rem 2rem;
+            background: linear-gradient(135deg, #161b22 0%, #0b0f14 50%, #0d1117 100%);
+            padding: 3.5rem 1rem 2.5rem;
         }
         .header-inner {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 0 auto;
         }
         .badge {
             display: inline-block;
-            padding: 0.35rem 0.75rem;
+            padding: 0.4rem 0.85rem;
             border-radius: 999px;
-            border: 1px solid rgba(88,166,255,0.2);
+            border: 1px solid rgba(88,166,255,0.25);
             background: rgba(88,166,255,0.1);
             color: var(--accent);
             font-size: 0.85rem;
-            font-weight: 600;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
         }
         h1, h2, h3 {
             color: #fff;
         }
         h1 {
-            font-size: clamp(2.2rem, 4vw, 3.2rem);
-            margin: 1rem 0 0.5rem;
+            font-size: clamp(2.5rem, 5vw, 3.4rem);
+            margin: 0.5rem 0 1rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+        h2 {
+            margin-top: 2.8rem;
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 1.9rem;
         }
         .lead {
             color: var(--muted);
-            max-width: 780px;
-            font-size: 1.08rem;
+            max-width: 820px;
+            font-size: 1.12rem;
+            line-height: 1.8;
         }
         .btn-row {
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
-            margin-top: 1.5rem;
+            margin-top: 1.8rem;
         }
         .btn {
             display: inline-block;
-            padding: 0.85rem 1.4rem;
+            padding: 0.95rem 1.8rem;
             border-radius: 8px;
             background: var(--success);
             color: white;
-            font-weight: bold;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn.primary {
+            background: linear-gradient(135deg, var(--success) 0%, #2ea44f 100%);
+            box-shadow: 0 4px 12px rgba(35, 134, 54, 0.25);
+        }
+        .btn.primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(35, 134, 54, 0.4);
         }
         .btn.secondary {
             background: transparent;
-            border: 1px solid var(--border);
+            border: 1.5px solid var(--border);
             color: var(--text);
+        }
+        .btn.secondary:hover {
+            background: rgba(88,166,255,0.1);
+            border-color: var(--accent);
         }
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 1.25rem;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
             margin-top: 2rem;
         }
         .card {
             background: var(--card);
             border: 1px solid var(--border);
             border-radius: 10px;
-            padding: 1.5rem;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 8px 24px rgba(88,166,255,0.1);
         }
         .tier {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 1.2rem;
             min-height: 100%;
         }
+        .tier.featured {
+            border: 2px solid var(--accent);
+            transform: scale(1.02);
+        }
         .tier .amount {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #fff;
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: var(--accent);
+            letter-spacing: -0.01em;
         }
         .tier .label {
             color: var(--muted);
             text-transform: uppercase;
             letter-spacing: 0.08em;
             font-size: 0.78rem;
+            font-weight: 600;
+        }
+        .tier-title {
+            font-size: 1.15rem;
+            font-weight: 700;
         }
         .list {
             padding-left: 1.2rem;
             margin: 0;
         }
+        .list li {
+            margin-bottom: 0.65rem;
+            color: var(--text);
+        }
         .notice {
             background: rgba(242,169,0,0.08);
             border-left: 4px solid var(--warning);
-            padding: 1.2rem 1.25rem;
+            padding: 1.3rem 1.4rem;
             border-radius: 8px;
+            margin-top: 2.5rem;
+        }
+        .value-section {
+            background: rgba(88,166,255,0.05);
+            border: 1px solid rgba(88,166,255,0.15);
+            border-radius: 10px;
+            padding: 2rem;
             margin-top: 2rem;
         }
-        .section-title {
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid var(--border);
-        }
         footer {
-            margin-top: 3rem;
-            padding: 2rem 1rem 3rem;
+            margin-top: 4rem;
+            padding: 2.5rem 1rem 3rem;
             text-align: center;
             color: var(--muted);
             border-top: 1px solid var(--border);
+        }
+        .highlight {
+            color: var(--accent);
+            font-weight: 700;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="header-inner">
-            <span class="badge">Support Vane Enterprise</span>
-            <h1>Build trust, security, and infrastructure for responsible AI.</h1>
-            <p class="lead">Support the Vane-Guard Sovereign Orchestrator and the broader Vane Enterprise mission through a transparent, community-backed funding model administered under the approved Open Collective fiscal host arrangement with VCS Academy (UK).</p>
+            <span class="badge">Sponsorship & Funding</span>
+            <h1>Support Vane Enterprise</h1>
+            <p class="lead">Fund the next generation of trusted AI infrastructure, enterprise governance frameworks, and deterministic architecture design. Support the Vane-Guard Sovereign Orchestrator through a transparent, community-backed funding model administered under the approved Open Collective fiscal host arrangement with VCS Academy (UK).</p>
             <div class="btn-row">
-                <a class="btn" href="https://opencollective.com/" target="_blank" rel="noopener">Open Collective</a>
+                <a class="btn primary" href="https://opencollective.com/vane-guard" target="_blank" rel="noopener">Open Collective: Vane-Guard</a>
                 <a class="btn secondary" href="./index.html">Back to Overview</a>
             </div>
         </div>
     </header>
 
     <div class="container">
-        <h2 class="section-title">Why Support This Project</h2>
+        <h2>Why Support This Project</h2>
         <div class="grid">
             <div class="card">
-                <h3>Trusted AI Architecture</h3>
-                <p>Support a public trust layer designed to improve system transparency, reduce hallucination risk, and strengthen responsible AI architecture practice.</p>
+                <h3>🚀 Trusted AI Architecture</h3>
+                <p>Support a public trust layer designed to improve system transparency, reduce hallucination risk, and strengthen responsible AI implementation at enterprise scale.</p>
             </div>
             <div class="card">
-                <h3>Enterprise-Ready Governance</h3>
-                <p>Help sustain governance-aware technical documentation, compliance-oriented materials, and stronger operational accountability.</p>
+                <h3>🏛️ Enterprise Governance</h3>
+                <p>Help sustain governance-aware technical documentation, compliance-oriented materials, audit trails, and operational accountability frameworks.</p>
             </div>
             <div class="card">
-                <h3>Public Infrastructure</h3>
-                <p>Contributions help maintain the website, infrastructure, technical validation, and community-facing materials that amplify project visibility.</p>
+                <h3>🌐 Public Infrastructure</h3>
+                <p>Contributions fund hosting, technical validation, security review, and community-facing materials that amplify project visibility and credibility.</p>
             </div>
         </div>
 
         <div class="notice">
-            <strong>Fiscal Host:</strong> VCS Academy (UK) is the approved Open Collective fiscal host for vane-enterprise.github.io. Donations and contributions are held under the approved fiscal host arrangement. This does not imply direct ownership or sponsorship unless separately stated in writing.
+            <strong>Fiscal Host:</strong> VCS Academy (UK) is the approved Open Collective fiscal host for vane-enterprise.github.io. Donations and contributions are held under the approved fiscal host arrangement and administered transparently. This does not imply direct ownership or corporate sponsorship unless separately stated in writing.
         </div>
 
-        <h2 class="section-title">Sponsorship & Donation Tiers</h2>
+        <h2>Sponsorship & Donation Tiers</h2>
         <div class="grid">
             <div class="card tier">
                 <div>
                     <div class="label">Tier 1</div>
                     <div class="amount">$10</div>
                 </div>
-                <div><strong>Community Supporter</strong></div>
+                <div class="tier-title">Community Supporter</div>
                 <ul class="list">
-                    <li>Recognition in community support list</li>
-                    <li>Project updates and early visibility</li>
-                    <li>Public supporter listing</li>
+                    <li>Recognition in community list</li>
+                    <li>Early project visibility</li>
+                    <li>Public supporter acknowledgment</li>
+                    <li>Monthly updates</li>
                 </ul>
             </div>
 
@@ -189,24 +243,26 @@
                     <div class="label">Tier 2</div>
                     <div class="amount">$25</div>
                 </div>
-                <div><strong>Project Backer</strong></div>
+                <div class="tier-title">Project Backer</div>
                 <ul class="list">
                     <li>Everything in Tier 1</li>
-                    <li>Quarterly project update notes</li>
-                    <li>Priority visibility in support section</li>
+                    <li>Quarterly progress updates</li>
+                    <li>Priority visibility</li>
+                    <li>Technical briefing access</li>
                 </ul>
             </div>
 
-            <div class="card tier">
+            <div class="card tier featured">
                 <div>
                     <div class="label">Tier 3</div>
                     <div class="amount">$99</div>
                 </div>
-                <div><strong>Trusted Builder</strong></div>
+                <div class="tier-title">Trusted Builder</div>
                 <ul class="list">
                     <li>Everything in Tier 2</li>
-                    <li>Consultation priority slot</li>
-                    <li>Recognition in launch materials</li>
+                    <li>One consultation hour/quarter</li>
+                    <li>Launch material recognition</li>
+                    <li>Advisory feedback</li>
                 </ul>
             </div>
 
@@ -215,54 +271,80 @@
                     <div class="label">Tier 4</div>
                     <div class="amount">$250</div>
                 </div>
-                <div><strong>Corporate Patron</strong></div>
+                <div class="tier-title">Corporate Patron</div>
                 <ul class="list">
                     <li>Everything in Tier 3</li>
-                    <li>Corporate support acknowledgment</li>
+                    <li>Corporate acknowledgment</li>
                     <li>Strategic alignment discussion</li>
+                    <li>Quarterly business review</li>
                 </ul>
             </div>
 
             <div class="card tier">
                 <div>
                     <div class="label">Tier 5</div>
-                    <div class="amount">$1,000+</div>
+                    <div class="amount">$1K+</div>
                 </div>
-                <div><strong>Strategic Partner</strong></div>
+                <div class="tier-title">Strategic Partner</div>
                 <ul class="list">
                     <li>Everything in Tier 4</li>
-                    <li>Direct advisory involvement</li>
-                    <li>Priority partnership collaboration</li>
+                    <li>Direct advisory board role</li>
+                    <li>Custom engagement terms</li>
+                    <li>Priority partnership opportunity</li>
                 </ul>
             </div>
         </div>
 
-        <h2 class="section-title">How Your Support Is Used</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Infrastructure</h3>
-                <p>Hosting, domain continuity, security validation, and reliable public-facing platform operations.</p>
-            </div>
-            <div class="card">
-                <h3>Documentation</h3>
-                <p>Governance, trust, compliance, and technical materials that make the project more credible and actionable.</p>
-            </div>
-            <div class="card">
-                <h3>Community Growth</h3>
-                <p>Education, outreach, awareness building, and technical communication to expand adoption and trust.</p>
+        <h2>How Your Support Is Used</h2>
+        <div class="value-section">
+            <h3 style="margin-top: 0; color: var(--accent);">Investment Allocation</h3>
+            <div class="grid">
+                <div>
+                    <p><span class="highlight">Infrastructure (40%)</span></p>
+                    <p>Hosting, domain, security validation, and reliable public-facing operations.</p>
+                </div>
+                <div>
+                    <p><span class="highlight">Documentation (35%)</span></p>
+                    <p>Governance, trust, compliance, and technical materials for credibility and adoption.</p>
+                </div>
+                <div>
+                    <p><span class="highlight">Community & Growth (25%)</span></p>
+                    <p>Education, outreach, technical communication, and partnership development.</p>
+                </div>
             </div>
         </div>
 
-        <h2 class="section-title">Corporate-Facing Trust Layout</h2>
+        <h2>Corporate-Facing Trust Layout</h2>
         <div class="card">
-            <p><strong>About:</strong> Vane Enterprise advances deterministic AI architecture, governance-aware infrastructure, and technical trust systems for organizations seeking more resilient and accountable AI operations.</p>
-            <p><strong>Trust:</strong> Public technical validation, transparent mission alignment, and governance-oriented project communication.</p>
-            <p><strong>Funding:</strong> The project is supported through Open Collective under the approved fiscal host arrangement with VCS Academy (UK).</p>
+            <h3>About Vane Enterprise</h3>
+            <p><strong>Vane Enterprise</strong> advances deterministic AI architecture, governance-aware infrastructure design, and institutional-grade trust systems for organizations seeking more resilient, transparent, and accountable AI operations.</p>
+            <p style="margin-top: 1.5rem; margin-bottom: 1.5rem;"><strong>Trust Model:</strong> Public technical validation, transparent mission alignment, governance-oriented communication, and institutional accountability.</p>
+            <p><strong>Funding & Support:</strong> The project is supported through Open Collective under the approved fiscal host arrangement with VCS Academy (UK). Corporate partnerships, strategic alignment, and advisory engagement available for aligned organizations.</p>
+            <div style="margin-top: 2rem;">
+                <a class="btn primary" href="https://opencollective.com/vane-guard" target="_blank" rel="noopener">Support on Open Collective</a>
+            </div>
+        </div>
+
+        <h2>Service & Advisory Offerings</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>🎯 Architecture Advisory</h3>
+                <p>Enterprise-grade AI architecture review, governance framework design, and deterministic system implementation consultation.</p>
+            </div>
+            <div class="card">
+                <h3>🔒 Security & Compliance</h3>
+                <p>RAG pipeline security, data governance, zero-trust design, and compliance-oriented documentation support.</p>
+            </div>
+            <div class="card">
+                <h3>📚 Training & Workshops</h3>
+                <p>AI governance workshops, architecture implementation bootcamps, and technical trust-layer education for enterprise teams.</p>
+            </div>
         </div>
     </div>
 
     <footer>
-        <p>Vane Enterprise LLC — Public trust architecture and AI governance support.</p>
+        <p><strong>Vane Enterprise LLC</strong> — Public trust infrastructure and AI governance support.</p>
+        <p><a href="https://opencollective.com/vane-guard" target="_blank" rel="noopener">Open Collective: vane-guard</a> | <a href="https://github.com/Vane-Enterprise" target="_blank" rel="noopener">GitHub: Vane-Enterprise</a></p>
     </footer>
 </body>
 </html>

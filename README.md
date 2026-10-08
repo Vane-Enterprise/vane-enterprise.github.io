@@ -25,6 +25,9 @@ Our work includes:
 
 Support for the project can be coordinated through the Open Collective framework, with the collective administered under the approved VCS Academy (UK) fiscal host arrangement.
 
+Open Collective profile:
+- https://opencollective.com/vane-guard
+
 The project aims to use community support to fund:
 - hosting and infrastructure
 - architecture validation and security review
@@ -48,6 +51,7 @@ Vane Enterprise is positioned as a credible platform for:
 ## Project Access
 
 - Website: https://vane-enterprise.github.io
+- Open Collective: https://opencollective.com/vane-guard
 - GitHub: https://github.com/Vane-Enterprise
 - Repository: https://github.com/Vane-Enterprise/vane-enterprise.github.io
 
