@@ -13,6 +13,7 @@
             --border-color: #30363d;
             --success-color: #238636;
             --warning-color: #f2a900;
+            --muted-color: #8b949e;
         }
         * { box-sizing: border-box; }
         body {
@@ -23,6 +24,7 @@
             margin: 0;
             padding: 0;
         }
+        a { color: var(--accent-color); }
         header {
             border-bottom: 1px solid var(--border-color);
             padding: 3rem 1rem;
@@ -30,13 +32,13 @@
             background: linear-gradient(180deg, #161b22 0%, #0d1117 100%);
         }
         .container {
-            max-width: 980px;
+            max-width: 1080px;
             margin: 0 auto;
             padding: 2rem 1rem 4rem;
         }
         h1 {
             color: #ffffff;
-            font-size: 2.5rem;
+            font-size: 2.7rem;
             margin-bottom: 0.5rem;
         }
         h2 {
@@ -51,7 +53,7 @@
         }
         .tagline {
             font-size: 1.2rem;
-            color: #8b949e;
+            color: var(--muted-color);
             margin-bottom: 2rem;
         }
         .badge {
@@ -74,7 +76,7 @@
             display: inline-block;
             background-color: var(--success-color);
             color: #ffffff;
-            padding: 0.75rem 1.5rem;
+            padding: 0.8rem 1.5rem;
             border-radius: 6px;
             text-decoration: none;
             font-weight: bold;
@@ -85,11 +87,22 @@
             border: 1px solid var(--border-color);
             color: var(--text-color);
         }
-        .btn:hover {
-            background-color: #2ea44f;
+        .btn:hover { background-color: #2ea44f; }
+        .btn.secondary:hover { background-color: rgba(255,255,255,0.03); }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.25rem;
+            margin-top: 1.5rem;
         }
-        .btn.secondary:hover {
-            background-color: rgba(255,255,255,0.03);
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+        .host-note {
+            border-left: 4px solid var(--warning-color);
         }
         .timeline {
             margin-top: 2rem;
@@ -110,32 +123,22 @@
             border-radius: 50%;
             background-color: var(--accent-color);
         }
-        .card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            padding: 1.5rem;
-        }
-        .host-note {
-            border-left: 4px solid var(--warning-color);
-        }
         ul {
             margin: 0.75rem 0 0 1.25rem;
             padding: 0;
         }
-        li {
-            margin-bottom: 0.5rem;
+        li { margin-bottom: 0.5rem; }
+        .note {
+            color: var(--muted-color);
+            font-size: 0.95rem;
         }
         footer {
             text-align: center;
             padding: 3rem 1rem;
             margin-top: 2rem;
             border-top: 1px solid var(--border-color);
-            color: #8b949e;
+            color: var(--muted-color);
             font-size: 0.9rem;
-        }
-        a {
-            color: var(--accent-color);
         }
     </style>
 </head>
@@ -147,15 +150,32 @@
         <p class="tagline">Deterministic Truth-AI Architecture with Immutable Output Guardrails.</p>
         <div class="btn-row">
             <a href="https://github.com/Vane-Enterprise/vane-enterprise.github.io" class="btn">Repository</a>
+            <a href="./support.html" class="btn secondary">Support This Project</a>
             <a href="https://opencollective.com/" class="btn secondary">Open Collective</a>
         </div>
     </header>
 
     <div class="container">
+        <h2>About Vane Enterprise</h2>
+        <p>Vane Enterprise is focused on trusted AI infrastructure, deterministic architecture design, and enterprise-grade governance patterns that improve reliability, transparency, and operational security.</p>
+        <div class="grid">
+            <div class="card">
+                <h3>Mission</h3>
+                <p>Build dependable architecture and governance frameworks that reduce hallucination risk, improve trust, and elevate responsible AI implementation.</p>
+            </div>
+            <div class="card">
+                <h3>Focus</h3>
+                <p>Secure AI orchestration, enterprise architecture advisory, zero-trust implementation design, and public technical verification.</p>
+            </div>
+            <div class="card">
+                <h3>Operating Model</h3>
+                <p>Open, transparent, governance-aware, and structured around public trust and technical accountability.</p>
+            </div>
+        </div>
+
         <h2>Ground Truth Architecture</h2>
         <p>The <strong>Vane-Truth-AI-Architecture</strong> functions as the authoritative framework for zero-hallucination processing pipelines. Engineered under the <em>Law of the Diamond</em>, the system establishes a deterministic operating model across data validation, evidence grounding, and trusted output orchestration.</p>
 
-        <h2>Verified Sequential Logic Gates</h2>
         <div class="timeline">
             <div class="step">
                 <div class="card">
@@ -172,7 +192,7 @@
             <div class="step">
                 <div class="card">
                     <h3>Gate 3: Evidence Grounding</h3>
-                    <p>Configures retrieval and validation steps to preserve transparency and increase the traceability of supporting evidence.</p>
+                    <p>Configures retrieval and validation steps to preserve transparency and increase traceability of supporting evidence.</p>
                 </div>
             </div>
             <div class="step">
@@ -190,14 +210,34 @@
             <p>Contributions received through the collective are held by VCS Academy (UK) under the approved fiscal host arrangement. This relationship is recorded as a fiscal host relationship and does not imply direct ownership, control, or sponsorship unless separately stated in writing.</p>
         </div>
 
-        <h2>Support & Funding</h2>
+        <h2>Trust & Funding</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Open Collective</h3>
+                <p>Community support is administered through the Open Collective framework under the approved fiscal host arrangement.</p>
+            </div>
+            <div class="card">
+                <h3>Funding Priorities</h3>
+                <ul>
+                    <li>Infrastructure and hosting</li>
+                    <li>Security review and documentation</li>
+                    <li>Governance and public trust material</li>
+                    <li>Project operations and sustainment</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Support Model</h3>
+                <p>Support this project through community contributions, recurring funding, and strategic partnerships that strengthen the ecosystem.</p>
+            </div>
+        </div>
+
+        <h2>Support This Project</h2>
         <div class="card">
-            <h3>How the project is strengthened</h3>
-            <ul>
-                <li>Community support helps maintain hosting, public infrastructure, and architectural validation.</li>
-                <li>Funding helps support documentation, reliability improvements, and governance readiness.</li>
-                <li>Project support can help sustain security review work, technical education, and enterprise trust assets.</li>
-            </ul>
+            <p>Support the project and help build an enterprise-grade trust layer for AI architecture, governance, and technical validation.</p>
+            <div class="btn-row" style="justify-content:flex-start; margin-top:1rem;">
+                <a href="./support.html" class="btn">View Funding Tiers</a>
+            </div>
+            <p class="note">This page is designed to present the project as a credible technical and funding asset without overstating financial or legal relationships.</p>
         </div>
 
         <h2>Marketplace Compliance & Verification</h2>

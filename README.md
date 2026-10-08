@@ -32,6 +32,11 @@ The project aims to use community support to fund:
 - community education and technical operations
 - ongoing project maintenance and enablement
 
+## Support This Project
+
+Visit the dedicated support page:
+- https://vane-enterprise.github.io/support.html
+
 ## Community Positioning
 
 Vane Enterprise is positioned as a credible platform for:
