@@ -1,49 +1,51 @@
-# [Vane Enterprise  LLC](vane-enterprise.github.io)
+# Vane Enterprise LLC
 
-Official public verification and technical support portal for the "Vane-Guard Sovereign Orchestrator" application. Built under the [Vane Enterprise LLC](https://vane-enterprise.github.io) identity anchor framework, this landing infrastructure validates multi-gate deterministic Truth-AI system architectures and RAG pipelines to eliminate model hallucinations.
+Official public verification and technical support portal for the Vane-Guard Sovereign Orchestrator.
 
-### VANE-ENTERPRISE-LLC-BACKUP-PACKAGE_v1.0
-Generated: July 15, 2026
-Status: Production-Ready
-Verification: All contact information verified and accurate
+This repository supports the Vane Enterprise identity, product validation, and community trust layer for secure AI architecture and governance initiatives.
 
-# FILE 1: PRIVACY.md (v1.0)
+## Fiscal Host
 
-# Privacy Policy
+This project is supported through the approved Open Collective arrangement with VCS Academy (UK), which has been approved as the fiscal host for vane-enterprise.github.io.
 
-**Effective Date:** January 1, 2026  
-**Last Updated:** July 15, 2026  
-**Organization:** [Vane Enterprise LLC](vane-enterprise.github.io)/ [Vane-Guard Sovereign Systems](dvane.gumroad.com/l/Vane-Guar) 
-**Contact:** [admin](mailto:hamdgai@cc.cc) [Lead Architect](myou260312@gmail.com)
+Contributions received through the collective are held by VCS Academy (UK) under the approved fiscal host arrangement. This relationship is documented as a fiscal host relationship and does not imply direct ownership or sponsorship unless separately stated in writing.
 
-[FULL 13-SECTION GDPR/CCPA/SOC2 COMPLIANT DOCUMENT]
-- Data Subject Rights (GDPR Articles 15-22)
-- CCPA California resident compliance
-- SOC 2 Type II security controls
-- Zero-telemetry guarantee
+## Mission
 
-# FILE 2: SECURITY.md (v1.0)
+Vane Enterprise is focused on trusted AI infrastructure, deterministic architecture design, and enterprise-grade governance patterns that improve reliability, transparency, and operational security.
 
-# Security Policy
+Our work includes:
+- secure AI orchestration and guardrail design
+- zero-trust implementation workflows
+- enterprise architecture advisory and validation
+- governance and compliance-oriented documentation
+- public technical trust and verification infrastructure
 
-**Last Updated:** July 15, 2026  
-**Contact:** [Lead Architect](myou260312@gmail.com)
+## Support & Funding
 
-[FULL VULNERABILITY DISCLOSURE POLICY]
-- 48-hour initial response SLA
-- 30-day resolution target
-- GPG encryption support
-- Compliance frameworks documented
+Support for the project can be coordinated through the Open Collective framework, with the collective administered under the approved VCS Academy (UK) fiscal host arrangement.
 
-# FILE 3: .github/CODEOWNERS
+The project aims to use community support to fund:
+- hosting and infrastructure
+- architecture validation and security review
+- documentation and public trust materials
+- community education and technical operations
+- ongoing project maintenance and enablement
 
-# Vane Enterprise Repository Code Ownership
-* [MD  ABUL  HOSSAIN](@myou260312-eng) &
-* [AnticipatedD](@AnticipatedD)
-  
-# FILE 4-7: GitHub Actions Workflows
+## Community Positioning
 
-- validate-links.yml (Link integrity automation)
-- html5-compliance.yml (HTML5 standards enforcement)
-- accessibility-audit.yml (WCAG 2.1 AA compliance)
-- security-headers.yml (Security posture validation)
+Vane Enterprise is positioned as a credible platform for:
+- technical verification
+- enterprise architecture messaging
+- governance-led AI infrastructure strategy
+- public trust and transparency in AI systems design
+
+## Project Access
+
+- Website: https://vane-enterprise.github.io
+- GitHub: https://github.com/Vane-Enterprise
+- Repository: https://github.com/Vane-Enterprise/vane-enterprise.github.io
+
+## Notes
+
+This repository is maintained as a public trust and information layer for the Vane-Guard Sovereign Orchestrator and related enterprise technology initiatives.

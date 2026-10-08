@@ -12,7 +12,9 @@
             --card-bg: #161b22;
             --border-color: #30363d;
             --success-color: #238636;
+            --warning-color: #f2a900;
         }
+        * { box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
             background-color: var(--bg-color);
@@ -28,9 +30,9 @@
             background: linear-gradient(180deg, #161b22 0%, #0d1117 100%);
         }
         .container {
-            max-width: 900px;
+            max-width: 980px;
             margin: 0 auto;
-            padding: 2rem 1rem;
+            padding: 2rem 1rem 4rem;
         }
         h1 {
             color: #ffffff;
@@ -42,6 +44,10 @@
             border-bottom: 1px solid var(--border-color);
             padding-bottom: 0.5rem;
             margin-top: 2.5rem;
+        }
+        h3 {
+            color: #ffffff;
+            margin-top: 0;
         }
         .tagline {
             font-size: 1.2rem;
@@ -57,6 +63,13 @@
             font-weight: 600;
             border: 1px solid rgba(88, 166, 255, 0.2);
         }
+        .btn-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
         .btn {
             display: inline-block;
             background-color: var(--success-color);
@@ -65,11 +78,18 @@
             border-radius: 6px;
             text-decoration: none;
             font-weight: bold;
-            margin-top: 1rem;
             transition: background-color 0.2s;
+        }
+        .btn.secondary {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
         }
         .btn:hover {
             background-color: #2ea44f;
+        }
+        .btn.secondary:hover {
+            background-color: rgba(255,255,255,0.03);
         }
         .timeline {
             margin-top: 2rem;
@@ -96,17 +116,26 @@
             border-radius: 6px;
             padding: 1.5rem;
         }
-        .card h3 {
-            color: #ffffff;
-            margin-top: 0;
+        .host-note {
+            border-left: 4px solid var(--warning-color);
+        }
+        ul {
+            margin: 0.75rem 0 0 1.25rem;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 0.5rem;
         }
         footer {
             text-align: center;
             padding: 3rem 1rem;
-            margin-top: 4rem;
+            margin-top: 2rem;
             border-top: 1px solid var(--border-color);
             color: #8b949e;
             font-size: 0.9rem;
+        }
+        a {
+            color: var(--accent-color);
         }
     </style>
 </head>
@@ -116,50 +145,70 @@
         <span class="badge">Official Vane Enterprise Support Portal</span>
         <h1>Vane-Guard Sovereign Orchestrator</h1>
         <p class="tagline">Deterministic Truth-AI Architecture with Immutable Output Guardrails.</p>
-        <a href="https://github.com" class="btn">Install App on GitHub</a>
+        <div class="btn-row">
+            <a href="https://github.com/Vane-Enterprise/vane-enterprise.github.io" class="btn">Repository</a>
+            <a href="https://opencollective.com/" class="btn secondary">Open Collective</a>
+        </div>
     </header>
 
     <div class="container">
         <h2>Ground Truth Architecture</h2>
-        <p>The <strong>Vane-Truth-AI-Architecture</strong> functions as the authoritative framework for zero-hallucination processing pipelines. Engineered under the <em>Law of the Diamond</em>, the core infrastructure ensures absolute data integrity across high-stakes law enhancement and enterprise networks.</p>
+        <p>The <strong>Vane-Truth-AI-Architecture</strong> functions as the authoritative framework for zero-hallucination processing pipelines. Engineered under the <em>Law of the Diamond</em>, the system establishes a deterministic operating model across data validation, evidence grounding, and trusted output orchestration.</p>
 
-        <h2>Verified Sequential Logic Gates (Main Branch)</h2>
+        <h2>Verified Sequential Logic Gates</h2>
         <div class="timeline">
             <div class="step">
                 <div class="card">
-                    <h3>Gate 1: <code>config.py</code></h3>
-                    <p>Establishes identity verification by anchoring system secrets to the <code>VANE_ROOT_STABLE_001</code> ID via secure repository deployment keys.</p>
+                    <h3>Gate 1: Identity Validation</h3>
+                    <p>Establishes identity verification by anchoring governance and operational trust to a stable enterprise identity framework.</p>
                 </div>
             </div>
             <div class="step">
                 <div class="card">
-                    <h3>Gate 2: <code>llm_provider.py</code></h3>
-                    <p>Enforces a mandatory, system-wide <code>0.0 temperature lock</code> to completely eliminate non-deterministic algorithmic drift across model nodes.</p>
+                    <h3>Gate 2: Deterministic Model Control</h3>
+                    <p>Enforces a low-drift, highly constrained processing model designed to mitigate output variance and uncontrolled model behavior.</p>
                 </div>
             </div>
             <div class="step">
                 <div class="card">
-                    <h3>Gate 3: <code>rag_pipeline.py</code></h3>
-                    <p>Configures advanced vector search parameters to build 100% transparent, tamper-proof audit trails for retrieval evidence.</p>
+                    <h3>Gate 3: Evidence Grounding</h3>
+                    <p>Configures retrieval and validation steps to preserve transparency and increase the traceability of supporting evidence.</p>
                 </div>
             </div>
             <div class="step">
                 <div class="card">
-                    <h3>Gate 4: <code>app.py</code></h3>
-                    <p>Finalizes the user interface orchestrator under native Vane Enterprise LLC branding, establishing an active security boundary for privileged reporting.</p>
+                    <h3>Gate 4: Trusted Operations</h3>
+                    <p>Finalizes the user-facing orchestration layer under the Vane Enterprise operating model and governance context.</p>
                 </div>
             </div>
+        </div>
+
+        <h2>Fiscal Host</h2>
+        <div class="card host-note">
+            <h3>VCS Academy (UK) — Open Collective Fiscal Host</h3>
+            <p>This project is supported through the approved Open Collective arrangement with <strong>VCS Academy (UK)</strong>, which has been approved as the fiscal host for <strong>vane-enterprise.github.io</strong>.</p>
+            <p>Contributions received through the collective are held by VCS Academy (UK) under the approved fiscal host arrangement. This relationship is recorded as a fiscal host relationship and does not imply direct ownership, control, or sponsorship unless separately stated in writing.</p>
+        </div>
+
+        <h2>Support & Funding</h2>
+        <div class="card">
+            <h3>How the project is strengthened</h3>
+            <ul>
+                <li>Community support helps maintain hosting, public infrastructure, and architectural validation.</li>
+                <li>Funding helps support documentation, reliability improvements, and governance readiness.</li>
+                <li>Project support can help sustain security review work, technical education, and enterprise trust assets.</li>
+            </ul>
         </div>
 
         <h2>Marketplace Compliance & Verification</h2>
         <div class="card" style="border-left: 4px solid var(--accent-color);">
             <h3>🛡️ Security & Privacy SLA</h3>
-            <p>This web index serves as the official support landing gate for GitHub Marketplace identity validation. The Vane-Guard Sovereign Orchestrator handles processes inside localized infrastructure boundaries. Zero external data tracking or telemetry is authorized.</p>
+            <p>This web index serves as the official support landing gate for public validation, trust signaling, and operational transparency. The Vane-Guard Sovereign Orchestrator is positioned as a governance-aligned architecture framework intended to support responsible AI deployment and secure workflow design.</p>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Vane Enterprise LLC. All Rights Reserved. Maintained by <a href="https://github.com" style="color:var(--accent-color); text-decoration:none;">@vane-enterprise</a>.</p>
+        <p>&copy; 2026 Vane Enterprise LLC. Fiscal host relationship as approved through Open Collective with VCS Academy (UK).</p>
     </footer>
 
 </body>
