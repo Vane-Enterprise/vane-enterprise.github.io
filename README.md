@@ -4,6 +4,14 @@ Official public verification and technical support portal for the Vane-Guard Sov
 
 This repository supports the Vane Enterprise identity, product validation, and community trust layer for secure AI architecture and governance initiatives.
 
+## Official IMLC Local Ambassador
+
+**Title:** Official IMLC Local Ambassador  
+**Profile:** https://imlco.org/en/mhossain  
+**Official Ambassador Email:** mailto:mhossain@amb.imlco.org
+
+This affiliation is included to reflect the official ambassador selection for the Vane Enterprise initiative and to support public recognition of international community leadership and institutional engagement.
+
 ## Fiscal Host
 
 This project is supported through the approved Open Collective arrangement with VCS Academy (UK), which has been approved as the fiscal host for vane-enterprise.github.io.
@@ -25,7 +33,8 @@ Our work includes:
 
 Support for the project can be coordinated through the Open Collective framework, with the collective administered under the approved VCS Academy (UK) fiscal host arrangement.
 
-- Open Collective profile: [Vane-Guard](https://opencollective.com/vane-guard)
+Open Collective profile:
+- https://opencollective.com/vane-guard
 
 The project aims to use community support to fund:
 - hosting and infrastructure
@@ -36,7 +45,8 @@ The project aims to use community support to fund:
 
 ## Support This Project
 
-Visit the dedicated support page: [Vane Enterprise](https://vane-enterprise.github.io/support.html)
+Visit the dedicated support page:
+- https://vane-enterprise.github.io/support.html
 
 ## Community Positioning
 
@@ -45,17 +55,16 @@ Vane Enterprise is positioned as a credible platform for:
 - enterprise architecture messaging
 - governance-led AI infrastructure strategy
 - public trust and transparency in AI systems design
+- international community leadership through the Official IMLC Local Ambassador designation
 
 ## Project Access
 
-- Website: [Vane Enterprise LLC](https://vane-enterprise.github.io)
-- Open Collective: [Vane-Guard](https://opencollective.com/vane-guard)
-- GitHub: [Vane Enterprise](https://github.com/Vane-Enterprise)
-- Repository: [Vane-Enterprise](https://github.com/Vane-Enterprise/vane-enterprise.github.io)
+- Website: https://vane-enterprise.github.io
+- Open Collective: https://opencollective.com/vane-guard
+- GitHub: https://github.com/Vane-Enterprise
+- Repository: https://github.com/Vane-Enterprise/vane-enterprise.github.io
+- IMLC Ambassador: https://imlco.org/en/mhossain
 
 ## Notes
 
-This repository is maintained as a public trust and information layer for the [Vane-Guard Sovereign Orchestrator](https://github.com/apps/vane-guard-sovereign-orchestrator) and related enterprise technology initiatives.
-
----
-Copyright © 2026 Vane Enterprise LLC. All Rights Reserved.
+This repository is maintained as a public trust and information layer for the Vane-Guard Sovereign Orchestrator and related enterprise technology initiatives.
