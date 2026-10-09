@@ -25,8 +25,7 @@ Our work includes:
 
 Support for the project can be coordinated through the Open Collective framework, with the collective administered under the approved VCS Academy (UK) fiscal host arrangement.
 
-Open Collective profile:
-- https://opencollective.com/vane-guard
+- Open Collective profile: [Vane-Guard](https://opencollective.com/vane-guard)
 
 The project aims to use community support to fund:
 - hosting and infrastructure
@@ -37,8 +36,7 @@ The project aims to use community support to fund:
 
 ## Support This Project
 
-Visit the dedicated support page:
-- https://vane-enterprise.github.io/support.html
+Visit the dedicated support page: [Vane Enterprise](https://vane-enterprise.github.io/support.html)
 
 ## Community Positioning
 
@@ -50,11 +48,14 @@ Vane Enterprise is positioned as a credible platform for:
 
 ## Project Access
 
-- Website: https://vane-enterprise.github.io
-- Open Collective: https://opencollective.com/vane-guard
-- GitHub: https://github.com/Vane-Enterprise
-- Repository: https://github.com/Vane-Enterprise/vane-enterprise.github.io
+- Website: [Vane Enterprise LLC](https://vane-enterprise.github.io)
+- Open Collective: [Vane-Guard](https://opencollective.com/vane-guard)
+- GitHub: [Vane Enterprise](https://github.com/Vane-Enterprise)
+- Repository: [Vane-Enterprise](https://github.com/Vane-Enterprise/vane-enterprise.github.io)
 
 ## Notes
 
-This repository is maintained as a public trust and information layer for the Vane-Guard Sovereign Orchestrator and related enterprise technology initiatives.
+This repository is maintained as a public trust and information layer for the [Vane-Guard Sovereign Orchestrator](https://github.com/apps/vane-guard-sovereign-orchestrator) and related enterprise technology initiatives.
+
+---
+Copyright © 2026 Vane Enterprise LLC. All Rights Reserved.
