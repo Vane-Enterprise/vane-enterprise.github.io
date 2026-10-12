@@ -1,49 +1,61 @@
 [build-system]
-requires = ["setuptools>=45", "wheel"]
+requires = ["setuptools>=65.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "vane-enterprise"
-version = "0.1.0"
-description = "Vane Enterprise official repository"
+name = "vane-enterprise-github-io"
+version = "1.0.0"
+description = "Vane Enterprise official documentation and infrastructure repository"
+authors = [{name = "Vane Enterprise LLC", email = "myou260312@gmail.com"}]
 readme = "README.md"
 requires-python = ">=3.11"
-authors = [
-    {name = "Vane Enterprise", email = "info@vane-enterprise.com"}
+license = {text = "Proprietary"}
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
 ]
-license = {text = "MIT"}
+
+dependencies = []
 
 [project.optional-dependencies]
 dev = [
-    "pytest>=7.0",
-    "pytest-cov>=4.0",
-    "flake8>=5.0",
-    "black>=22.0",
-    "mypy>=0.990",
-    "pylint>=2.15",
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "black>=23.0",
+    "flake8>=6.0",
+    "mypy>=1.5",
 ]
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-addopts = "--cov=src --cov-report=html --cov-report=term-missing"
-python_files = "test_*.py"
-
-[tool.coverage.run]
-source = ["src"]
-omit = ["*/tests/*", "*/test_*.py"]
 
 [tool.black]
 line-length = 100
-target-version = ['py311']
+target-version = ["py311"]
 
 [tool.mypy]
 python_version = "3.11"
 warn_return_any = true
 warn_unused_configs = true
-disallow_untyped_defs = false
+disallow_untyped_defs = true
+strict = true
 
-[tool.pylint.messages_control]
-disable = ["C0111", "R0913"]
+[tool.pytest.ini_options]
+minversion = "7.4"
+testpaths = ["tests"]
+addopts = "--cov=src --cov-report=term-report --cov-report=html"
 
-[tool.pylint.format]
-max-line-length = 100
+[tool.coverage.run]
+source = ["src"]
+omit = ["*/tests/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+]
