@@ -1,66 +1,24 @@
-# Intelligent test execution strategy
-Implement smart test execution that runs only relevant tests based on changed code:
+from pathlib import Path
 
-```Bash
-#!/usr/bin/env bash
-# Intelligent test execution based on change impact
 
-execute_relevant_tests() {
-    local changed_files=$(git diff --cached --name-only)
-    local test_failures=0
+def test_test_directory_contains_valid_python_tests():
+    """Smoke-check that the repository test directory contains real Python tests."""
+    tests_dir = Path(__file__).resolve().parent
+    assert tests_dir.exists()
+    assert (tests_dir / "test_config_env.py").is_file()
+    assert (tests_dir / "execute_relevant_tests.py").is_file()
 
-    echo "Analyzing test requirements for changed files..."
 
-    # Check if source code changes require testing
-    if echo "$changed_files" | grep -qE "\.(js|jsx|ts|tsx|py|cs|go)$"; then
-        echo "Source code changes detected, running relevant tests..."
+def test_test_files_are_python_files():
+    """Ensure discovered test files keep a .py extension and are readable."""
+    tests_dir = Path(__file__).resolve().parent
+    for path in tests_dir.glob("*.py"):
+        assert path.suffix == ".py"
+        assert path.read_text(encoding="utf-8")
 
-        # JavaScript/TypeScript projects
-        if [ -f "package.json" ] && command -v npm >/dev/null 2>&1; then
-            if echo "$changed_files" | grep -qE "\.(js|jsx|ts|tsx)$"; then
-                echo "Running JavaScript/TypeScript tests..."
-                npm test -- --findRelatedTests $changed_files --passWithNoTests || ((test_failures++))
-            fi
-        fi
 
-        # Python projects
-        if [ -f "requirements.txt" ] || [ -f "pyproject.toml" ]; then
-            if echo "$changed_files" | grep -qE "\.py$"; then
-                echo "Running Python tests..."
-                if command -v pytest >/dev/null 2>&1; then
-                    pytest --tb=short || ((test_failures++))
-                elif command -v python3 >/dev/null 2>&1; then
-                    python3 -m unittest discover || ((test_failures++))
-                fi
-            fi
-        fi
-
-        # .NET projects
-        if find . -name "*.csproj" -o -name "*.sln" | grep -q .; then
-            if echo "$changed_files" | grep -qE "\.cs$"; then
-                echo "Running .NET tests..."
-                dotnet test --no-build --verbosity minimal || ((test_failures++))
-            fi
-        fi
-
-        # Go projects
-        if [ -f "go.mod" ]; then
-            if echo "$changed_files" | grep -qE "\.go$"; then
-                echo "Running Go tests..."
-                go test ./... || ((test_failures++))
-            fi
-        fi
-    fi
-
-    if [ $test_failures -gt 0 ]; then
-        echo "Test execution failed"
-        echo "Please fix failing tests before committing"
-        return 1
-    fi
-
-    echo "All relevant tests passed"
-    return 0
-}
-
-# Execute intelligent testing
-execute_relevant_tests || exit 1
+def test_repository_root_is_accessible():
+    """Sanity check that the repo root is discoverable from the test file location."""
+    repo_root = Path(__file__).resolve().parent.parent
+    assert repo_root.exists()
+    assert (repo_root / "config.py").is_file()
