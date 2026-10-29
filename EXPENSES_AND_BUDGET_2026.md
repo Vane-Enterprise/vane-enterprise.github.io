@@ -2,7 +2,7 @@
 
 **Fiscal Period:** Q4 2026 (October - December)  
 **Fiscal Host:** VCS Academy (UK)  
-**Open Collective:** https://opencollective.com/vane-guard  
+**Open Collective:** [Vane-Guard](https://opencollective.com/vane-guard)  
 **Prepared:** October 8, 2026
 
 ---
@@ -62,8 +62,8 @@ Vane Enterprise is a mission-driven initiative focused on deterministic AI archi
 ### Expert Labor & Governance Contribution
 
 **Founder & Lead Architect Contribution:**
-- Role: MD ABUL HOSSAIN (Dante Vane), Founder & Chairman
-- Credentials: 87 IBM certifications | 19 IBM badges | 224 cumulative badges | 45 trophies | Level 13 Microsoft Partner
+- Role: MD ABUL HOSSAIN (AnticipatedD), Founder & Chairman
+- Credentials: 87 IBM certifications | 19 IBM badges | 234 cumulative badges | 43 Trophies | Level 13 Microsoft Partner
 - IBM Partner Plus Status: Verified enterprise architect and AI governance specialist
 - Microsoft Business Partner Status: Advanced cloud and enterprise solutions partner
 - Annual Expert Time Allocation: ~2,000 hours @ $150/hour market rate = **$300,000 value**
@@ -76,7 +76,7 @@ Vane Enterprise is a mission-driven initiative focused on deterministic AI archi
 
 **Proposed Fair Market Compensation Model:**
 - Monthly Founder Stipend: $8,000 (covers ~50-60 hours of expert contribution)
-- Annual Founder Investment Recognition: $96,000
+- Annual Founder Investment Recognition: $56,000
 - Reduces expert value depreciation and burnout risk
 
 ---
@@ -100,12 +100,12 @@ Community & Growth:             $4,625  (25%)
 
 ### Annual Projection (2027)
 
-**Total Annual Goal: $74,000**
+**Total Annual Goal: $54,000**
 
-- Operations & Infrastructure: $30,800
-- Development & Security: $30,800
-- Community Growth: $13,800
-- **Founder Stipend (optional tier):** $96,000 (separate tier for corporate backers)
+- Operations & Infrastructure: $20,800
+- Development & Security: $20,800
+- Community Growth: $9,800
+- **Founder Stipend (optional tier):** $46,000 (separate tier for corporate backers)
 
 ---
 
@@ -193,7 +193,7 @@ All funds received through Open Collective are held by **VCS Academy (UK)** unde
    - Timeline: 30-45 days
 
 3. **One-Time Grant Applications**
-   - Target: $10,000-25,000 from open-source foundations
+   - Target: $10,000-5,000 from open-source foundations
    - Candidates: Linux Foundation, CNCF, Open Source Initiative
    - Timeline: 45-60 days (if approved)
 
@@ -221,21 +221,21 @@ All funds received through Open Collective are held by **VCS Academy (UK)** unde
 
 1. **Enterprise Services Package**
    - Offering: Architecture audit, governance framework design, compliance review
-   - Price: $15,000-30,000 per engagement
+   - Price: $15,000-20,000 per engagement
    - Target: 2-3 engagements/quarter
-   - Revenue: $30,000-90,000/quarter
+   - Revenue: $20,000-54,000/quarter
 
 2. **Certification & Credentialing Program**
    - Offering: "Vane-Certified AI Architect" program
    - Price: $2,000-5,000 per certification
    - Target: 20-50 certifications/year
-   - Revenue: $40,000-250,000/year
+   - Revenue: $40,000-150,000/year
 
 3. **Sponsored Research & White Papers**
    - Opportunity: IBM, Microsoft, enterprise cloud providers
    - Price: $10,000-50,000 per research project
    - Target: 2-4 projects/year
-   - Revenue: $20,000-200,000/year
+   - Revenue: $20,000-100,000/year
 
 ---
 
