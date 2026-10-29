@@ -1,7 +1,7 @@
 # Security Policy
 
 **Last Updated:** July 15, 2026  
-**Contact:** myou260312@gmail.com
+**Contact:** [Security Depo](mailto:myou260312@gmail.com)
 
 ## Reporting Security Vulnerabilities
 
@@ -15,7 +15,7 @@ We take security seriously. If you discover a security vulnerability in the Vane
 
 ### ✅ DO
 
-1. **Email our Security Team:** myou260312@gmail.com
+1. **Email our Security Team:** [Security Team](mailto:myou260312@gmail.com)
 2. **Include:**
    - Description of the vulnerability
    - Steps to reproduce (if applicable)
@@ -35,4 +35,3 @@ We take security seriously. If you discover a security vulnerability in the Vane
 ### GPG Encryption
 
 For sensitive communications, you may encrypt reports using our public GPG key:
-
