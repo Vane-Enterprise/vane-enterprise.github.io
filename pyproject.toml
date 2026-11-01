@@ -9,7 +9,7 @@ description = "Vane Enterprise official documentation and infrastructure reposit
 authors = [{name = "Vane Enterprise LLC", email = "myou260312@gmail.com"}]
 readme = "README.md"
 requires-python = ">=3.11"
-license = "Proprietary"
+license = { text = "Proprietary" }
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
